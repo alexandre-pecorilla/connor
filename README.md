@@ -20,7 +20,7 @@
 
 `python3 connor.py web <TARGET-URL> <IP> <PORT>`
 
-**<TARGET-URL> format**
+**Format of TARGET-URL**
 
 `http://site.com?param=`
 
